@@ -1,0 +1,196 @@
+@import url("./reset.css");
+@import url("./responsive.css");
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* * Banner */
+
+.banner {
+    background-color: #FFDD40;
+    height: 80vh;
+}
+
+.banner .header {
+    padding: 20px 0;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.navbar .logo {
+    color: #000;
+}
+
+.navbar .logo h2 {
+    font-weight: 500;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+
+.menu .list-item .list-item-link {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.menu .active a {
+    color: #000;
+}
+
+
+.menu .list-item:hover a {
+    color: #000;
+    transition: color .5s linear;
+}
+
+.list-item .dropdown-top {
+    background-color: #fff;
+    width: 150px;
+    /* padding: 10px 20px; */
+    border-top: 2px solid black;
+
+}
+
+.dropdown-top li {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
+.dropdown-top li:hover {
+    background-color: #eff1f3;
+}
+
+.menu .dropdown-parent {
+    position: relative;
+    padding-bottom: 20px;
+
+}
+
+.dropdown-parent .dropdown-top {
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    transition: all .1s linear;
+    pointer-events: none;
+}
+
+.dropdown-parent:hover .dropdown-top,
+.dropdown-parent .dropdown-top:hover {
+    top: 40px;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.inner-dropdown-parent {
+    position: relative;
+}
+
+.inner-dropdown-parent span {
+    margin-right: 70px;
+}
+
+.inner-dropdown-parent .inner-dropdown {
+    position: absolute;
+    left: -150px;
+    top: 20px;
+    opacity: 0;
+    background-color: #fff;
+    border-top: 2px solid black;
+    width: 150px;
+    transition: .1s all linear;
+}
+
+.inner-dropdown li {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
+.inner-dropdown li:hover {
+    background-color: #eff1f3;
+}
+
+.inner-dropdown-parent:hover .inner-dropdown {
+    opacity: 1;
+    top: 0;
+}
+
+
+.banner .banner-content {
+    /* height: 69vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aqua; */
+    margin-top: 150px;
+}
+
+.banner-content h1 {
+    font-size: 50px;
+}
+
+.banner-content p {
+    font-weight: 300;
+    color: #000;
+}
+
+.banner-content a {
+    color: #fd7e14;
+}
+
+/* * Banner */
+
+/* * Main Slider */
+
+.main-slider {
+    margin-top: -75px;
+}
+
+.main-slider img {
+    width: 100%;
+}
+
+.main-slider .swiper-button-next,
+.main-slider .swiper-button-prev {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all .3s linear;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-slider .swiper-button-next:hover,
+.main-slider .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.main-slider .swiper-button-next::after {
+    content: ">" !important;
+    color: white;
+    font-size: 15px;
+}
+
+.main-slider .swiper-button-prev::after {
+    content: "<" !important;
+    color: white;
+    font-size: 15px;
+
+}
+
+/* * Main Slider */

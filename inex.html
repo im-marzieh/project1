@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
+        integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Banner                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="banner">
+        <div class="container">
+            <header class="header">
+                <nav class="navbar">
+                    <a class="logo" href="">
+                        <h2>مربی</h2>
+                    </a>
+                    <ul class="menu">
+                        <li class="list-item active">
+                            <a class="list-item-link" href="">خانه</a>
+                        </li>
+                        <li class="list-item dropdown-parent">
+                            <a class="list-item-link" href="">
+                                درباره ما
+                                <span><i class="fas fa-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-top">
+                                <li><a href="">آموزشهای ما</a></li>
+                                <li><a href="">تست ها</a></li>
+                                <li><a href="">گالری</a></li>
+                                <li><a href="">وبلاگ</a></li>
+                                <li class="inner-dropdown-parent">
+                                    <a href="">
+                                        لینک ها
+                                        <span><i class="fas fa-angle-left"></i></span>
+                                    </a>
+                                    <ul class="inner-dropdown">
+                                        <li><a href="">لیست کاربر</a></li>
+                                        <li><a href="">لیست مدیر</a></li>
+                                        <li><a href="">لیست اتفاقات</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item-link" href="">آموزشهای ما</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item-link" href="">سرویس های ما</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="list-item-link" href="">ارتباط با ما</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </header>
+            <div class="banner-content">
+                <h1><span id="element"></span></h1>
+                <p>هر چه نیاز داشته باشید ما در یک سایت به صورت جامع برایتان فراهم کردیم
+                    <a href="">ارتباط با ما</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Main Slider                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="main-slider">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/coach_hero_1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/coach_hero_2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/coach_hero_3.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
