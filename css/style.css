@@ -194,3 +194,242 @@
 }
 
 /* * Main Slider */
+
+
+/* * About Us */
+.about-us {
+    margin-top: 50px;
+}
+
+.about-us .about-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-us .about-content {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.about-content .about-content-right {
+    width: 50%;
+}
+
+.about-content-right p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.about-content-right img {
+    width: 25%;
+}
+
+.about-content .about-content-left {
+    width: 50%;
+}
+
+.about-content-left .about-content-left-title {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.about-content-left ul {
+    margin-top: 20px;
+}
+
+.about-content-left ul li {
+    margin-bottom: 18px;
+}
+
+.about-content-left ul li h3 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.about-content-left ul li p {
+    font-size: 12px;
+    color: gray;
+    font-weight: 300;
+}
+
+.about-us .about-team {
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+}
+
+.about-team .about-team-item {
+    width: 25%;
+}
+
+.about-team-item img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.about-team-item h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-team-item p {
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
+}
+
+.about-team-item div {
+    margin-top: 13px;
+    text-align: center;
+}
+
+.about-team-item div span {
+    font-size: 14px;
+    margin-left: 30px;
+    color: #007bff;
+    transition: .3s color linear;
+}
+
+.about-team-item div span:hover {
+    color: #0056b3;
+}
+
+/* * About Us */
+
+
+/* * Our Courses */
+
+.our-courses {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #F8F9FA;
+    text-align: center;
+}
+
+.our-courses-title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.our-courses-description {
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
+}
+
+.our-courses .our-courses-content {
+    margin-top: 50px;
+}
+
+.our-courses-item img {
+    transition: transform .3s linear;
+    width: 300px;
+}
+
+.our-courses-item .our-courses-item-img {
+    overflow: hidden;
+}
+
+.our-courses-item:hover img {
+    transform: scale(1.05);
+    /* width: 100px; */
+}
+
+.our-courses-item-body {
+    text-align: right;
+}
+
+.our-courses-item-body h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.our-courses-item-body p {
+    font-size: 13px;
+    color: gray;
+    font-weight: 300;
+}
+
+/* * Our Courses */
+
+/* * Our Services */
+.our-services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-services-title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.our-services-description {
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.our-services .our-services-content {
+    margin-top: 70px;
+}
+
+.our-services-item-body {
+    text-align: right;
+}
+
+.our-services-item-body h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.our-services-item-body p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: gray;
+    font-weight: 300;
+}
+
+/* * Our Services */
+
+/* * Gallery */
+.gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.gallery-description {
+    font-size: 13px;
+    color: gray;
+    font-weight: 300;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery .gallery-content {
+    width: 1000px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.about-content .about-content-item {
+    width: 100%;
+}
+
+.about-content .about-content-item img {
+    width: 100%;
+    /* height: 300px; */
+}
+
+/* * Gallery */
