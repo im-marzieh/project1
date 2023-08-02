@@ -47,3 +47,20 @@ var swiper = new Swiper(".mySwiper2", {
         clickable: true,
     },
 });
+
+// * Swiper JS
+
+var swiper = new Swiper(".mySwiper3", {
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});

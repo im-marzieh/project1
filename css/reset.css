@@ -81,3 +81,15 @@ textarea {
 img {
     cursor: pointer;
 }
+
+input,
+textarea {
+    font-family: "vazir";
+}
+
+/* Polygon */
+/* clip-path: polygon(37.5% 62.5%, 62.5% 62.5%, 50% 75%);
+background-color: #FFDD40;
+height: 200px;
+width: 100px; */
+/* Polygon */
