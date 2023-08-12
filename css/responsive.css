@@ -67,6 +67,11 @@
          width: 100% !important;
          margin-bottom: 25px;
      }
+
+     .footer .copyright p {
+         color: #737373;
+         font-size: 14px !important;
+     }
  }
 
  /* Small devices (landscape phones, less than 768px) */
