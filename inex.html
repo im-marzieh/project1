@@ -22,19 +22,19 @@
     <!-- ----------------------------------------------------------------------- -->
     <div class="banner" id="home">
         <div class="container">
-            <header class="header">
+            <header class="header" id="header">
                 <nav class="navbar">
                     <a class="logo" href="">
-                        <h2>مربی</h2>
+                        مربی
                     </a>
                     <ul class="menu">
                         <li class="list-item active">
                             <a class="list-item-link" href="#home">خانه</a>
                         </li>
                         <li class="list-item dropdown-parent">
-                            <a class="list-item-link" href="#about-us">
+                            <a class="list-item-link" href="#about-us" id="about-us">
                                 درباره ما
-                                <span><i class="fas fa-angle-down"></i></span>
+                                <span id="about-us-icon"><i class="fas fa-angle-down"></i></span>
                             </a>
                             <ul class="dropdown-top">
                                 <li><a href="">آموزشهای ما</a></li>
@@ -42,9 +42,9 @@
                                 <li><a href="">گالری</a></li>
                                 <li><a href="">وبلاگ</a></li>
                                 <li class="inner-dropdown-parent">
-                                    <a href="">
+                                    <a href="#" id="links">
                                         لینک ها
-                                        <span><i class="fas fa-angle-left"></i></span>
+                                        <span class="link-icon"><i class="fas fa-angle-down"></i></span>
                                     </a>
                                     <ul class="inner-dropdown">
                                         <li><a href="">لیست کاربر</a></li>
@@ -65,6 +65,9 @@
                         </li>
 
                     </ul>
+                    <button class="menu-btn">
+                        <span> <i class="fas fa-bars"></i></span>
+                    </button>
                 </nav>
             </header>
             <div class="banner-content">
@@ -151,7 +154,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="about-team">
+            <div class="about-team" id="about-team">
                 <div class="about-team-item">
                     <img src="./images/person_1.jpg" alt="">
                     <h2>مرضیه</h2>
@@ -257,8 +260,47 @@
             </p>
             <div class="our-courses-content">
                 <!-- Swiper -->
-                <div class="swiper mySwiper2">
+                <div class="swiper mySwiper2" style="padding-bottom: 50px;">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="our-courses-item">
+                                <div class="our-courses-item-img">
+                                    <img src="./images/coach_1_sm.jpg" alt="">
+                                </div>
+                                <div class="our-courses-item-body">
+                                    <h3>ایجاد یک فرصت</h3>
+                                    <p>در میانه­‌ی راه، به این فکر کنید که از اول اصلا چرا وارد این راه شدید؟ علل شخصی،
+                                        منطقی و مهمی
+                                        که باعث شدند بخواهید به این هدف برسید چه بودند؟</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-courses-item">
+                                <div class="our-courses-item-img">
+                                    <img src="./images/coach_1_sm.jpg" alt="">
+                                </div>
+                                <div class="our-courses-item-body">
+                                    <h3>ایجاد یک فرصت</h3>
+                                    <p>در میانه­‌ی راه، به این فکر کنید که از اول اصلا چرا وارد این راه شدید؟ علل شخصی،
+                                        منطقی و مهمی
+                                        که باعث شدند بخواهید به این هدف برسید چه بودند؟</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-courses-item">
+                                <div class="our-courses-item-img">
+                                    <img src="./images/coach_1_sm.jpg" alt="">
+                                </div>
+                                <div class="our-courses-item-body">
+                                    <h3>ایجاد یک فرصت</h3>
+                                    <p>در میانه­‌ی راه، به این فکر کنید که از اول اصلا چرا وارد این راه شدید؟ علل شخصی،
+                                        منطقی و مهمی
+                                        که باعث شدند بخواهید به این هدف برسید چه بودند؟</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="our-courses-item">
                                 <div class="our-courses-item-img">
@@ -336,18 +378,17 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                              Our Services                               -->
     <!-- ----------------------------------------------------------------------- -->
-    <div class="our-services" id="our-services">
+    <div class="our-services" id="our-services" >
         <div class="container">
             <h1 class="our-services-title">سرویس های ما</h1>
             <p class="our-services-description">
-
                 منابع انسانی یا به عبارت بهتر سرمایه‌های انسانی از مهم‌ترین عوامل تولید در یک سازمان به شمار می‌رود . از
                 همین رو انگیزش در کارکنان و مسائل مربوط به آن، دلمشغولی‌های مهم مدیران سازمان و شرکت‌های عصر حاضر است.
                 چالش اصلی یک سازمان در ایجاد انگیزه کارکنان تعادل میان اهداف آن سازمان و ارزش‌های شخصی کارکنان آن است.
             </p>
             <div class="our-services-content">
                 <!-- Swiper -->
-                <div class="swiper mySwiper3">
+                <div class="swiper mySwiper3" style="padding-bottom: 50px;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="our-services-item">
@@ -399,12 +440,41 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="swiper-slide">
+                            <div class="our-services-item">
+                                <div class="our-services-item-body">
+                                    <h3>بهتر زندگی کردن</h3>
+                                    <p>توانمندی، به شما قدرت و اعتماد به نفس می‌دهد تا شایستگی‌های نهفته‌ی خود را بیدار
+                                        کنید. لازمه‌‌ی داشتن اعتماد به نفس این است که شما خود و نیازهایتان را بشناسید.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-services-item">
+                                <div class="our-services-item-body">
+                                    <h3>بهتر زندگی کردن</h3>
+                                    <p>توانمندی، به شما قدرت و اعتماد به نفس می‌دهد تا شایستگی‌های نهفته‌ی خود را بیدار
+                                        کنید. لازمه‌‌ی داشتن اعتماد به نفس این است که شما خود و نیازهایتان را بشناسید.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="our-services-item">
+                                <div class="our-services-item-body">
+                                    <h3>بهتر زندگی کردن</h3>
+                                    <p>توانمندی، به شما قدرت و اعتماد به نفس می‌دهد تا شایستگی‌های نهفته‌ی خود را بیدار
+                                        کنید. لازمه‌‌ی داشتن اعتماد به نفس این است که شما خود و نیازهایتان را بشناسید.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-button-next2"></div>
+                <div class="swiper-button-prev2"></div>
             </div>
         </div>
     </div>
@@ -418,7 +488,7 @@
             ایده‌های خود را روی یک کاغذ مخصوص یادداشت کنید. هر چه وضوح اهداف‌تان را برای خود روشن‌تر کنید، تصور
             بهتری از آن‌ها پیدا خواهید کرد.
         </p>
-        <div class="gallery-content">
+        <div class="gallery-content" id="gallery-content">
             <div class="gallery-content-item"><img src="./images/coach_1_sm.jpg" alt=""></div>
             <div class="gallery-content-item"><img src="./images/coach_1_sm.jpg" alt=""></div>
             <div class="gallery-content-item"><img src="./images/coach_1_sm.jpg" alt=""></div>
@@ -436,12 +506,12 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                                Trainess                                 -->
     <!-- ----------------------------------------------------------------------- -->
-    <div class="trainees">
+    <div class="trainees" >
         <div class="container">
             <h1 class="trainees-title">کارآموزان خوشنود ما</h1>
             <div class="trainees-content">
                 <!-- Swiper -->
-                <div class="swiper mySwiper3">
+                <div class="swiper mySwiper4" style="padding-bottom: 120px;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="trainees-content-item">
@@ -532,7 +602,7 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                                  Blog                                   -->
     <!-- ----------------------------------------------------------------------- -->
-    <div class="blog">
+    <div class="blog" >
         <div class="container">
             <h1 class="blog-title">وبلاگ</h1>
             <p class="blog-description">
@@ -599,7 +669,7 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                               Contanct Us                               -->
     <!-- ----------------------------------------------------------------------- -->
-    <div class="contact-us">
+    <div class="contact-us" id="contact-us">
         <div class="container">
             <h1 class="contact-us-title">ارتباط با ما</h1>
             <div class="contact-us-address">
@@ -636,7 +706,7 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 Footer                                  -->
     <!-- ----------------------------------------------------------------------- -->
-    <footer class="footer">
+    <footer class="footer" >
         <div class="container">
             <div class="footer-top">
                 <div class="footer-about">
@@ -689,8 +759,8 @@
             <div class="copyright">
                 <p>
                     Copyright ©2023 All rights reserved | This template is made with ❤️ by
-                    <span>Goomboli</span> and<span>
-                        Grizli</span>
+                    <a href="https://github.com/im-marzieh">Goomboli</a> and<a href="https://github.com/Ramin-Joshang">
+                        Grizli</a>
                 </p>
             </div>
         </div>

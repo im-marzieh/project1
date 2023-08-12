@@ -14,10 +14,24 @@
 }
 
 .banner .header {
-    padding: 20px 0;
+    padding: 20px 0 0 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transition: all .3s linear;
+    z-index: 100;
 }
 
+.banner header.active {
+    background-color: #fff;
+    padding: 10px 0 0 0;
+}
+
+
 .header .navbar {
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     /* display: flex;
@@ -26,10 +40,15 @@
 
 .navbar .logo {
     color: #000;
+    font-weight: 500;
+    font-size: 22px;
 }
 
-.navbar .logo h2 {
-    font-weight: 500;
+.navbar .menu-btn {
+    /* display: none; */
+    background-color: transparent;
+    font-size: 20px;
+    display: none;
 }
 
 .navbar .menu {
@@ -138,7 +157,7 @@
     justify-content: center;
     flex-direction: column;
     background-color: aqua; */
-    margin-top: 150px;
+    padding-top: 300px;
 }
 
 .banner-content h1 {
@@ -257,13 +276,12 @@
 
 .about-us .about-team {
     margin-top: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     gap: 25px;
 }
 
-.about-team .about-team-item {
-    width: 25%;
-}
+/* .about-team .about-team-item {} */
 
 .about-team-item img {
     width: 50%;
@@ -352,11 +370,11 @@
 }
 
 .our-courses-content .swiper-button-prev {
-    left: -30px !important;
+    left: -50px !important;
 }
 
 .our-courses-content .swiper-button-next {
-    right: -30px !important;
+    right: -50px !important;
 }
 
 /* * Customize Swpier Arrow */
@@ -413,8 +431,52 @@
 
 .our-services .our-services-content {
     margin-top: 70px;
+    position: relative;
+
 }
 
+/* * Customize Swpier Arrow */
+.our-services-content .swiper-button-next2,
+.our-services-content .swiper-button-prev2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all .3s linear;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.our-services-content .swiper-button-next2:hover,
+.our-services-content .swiper-button-prev2:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.our-services-content .swiper-button-next2::after {
+    content: "<";
+    color: white;
+    font-size: 20px;
+}
+
+.our-services-content .swiper-button-prev2::after {
+    content: ">";
+    color: white;
+    font-size: 20px;
+
+}
+
+.our-services-content .swiper-button-prev2 {
+    left: -40px !important;
+}
+
+.our-services-content .swiper-button-next2 {
+    right: -50px !important;
+}
+
+/* * Customize Swpier Arrow */
 .our-services-item-body {
     text-align: right;
 }
@@ -458,7 +520,7 @@
     padding: 0 20px;
     display: grid;
     gap: 20px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
 }
 
 
@@ -822,7 +884,7 @@
     font-size: 20px;
 }
 
-.copyright p span {
+.copyright p a {
     color: red;
 }
 
